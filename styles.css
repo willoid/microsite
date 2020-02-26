@@ -1,0 +1,43 @@
+@keyframes pulse {
+  0% {
+    color: rgba(98, 0, 255, 0.5);
+  }
+
+  100% {
+    color: rgba(255, 255, 0, 0.5);
+  }
+}
+
+.hero {
+  width: 100vw;
+  height: 100vh;
+  margin: 0px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  background-color: black;
+  background-image: url(https://thumbs.gfycat.com/CommonSillyCarp-max-1mb.gif);
+  background-size: cover;
+}
+
+.h1 {
+  display: grid;
+  font-family: "Montserrat Subrayada";
+  font-size: 80px;
+  justify-items: center;
+  align-items: center;
+  animation: pulse 5s infinite;
+  animation-direction: alternate;
+}
+
+.txt {
+  display: grid;
+  font-family: "Montserrat";
+  font-size: 40px;
+  background: -webkit-linear-gradient(rgb(255, 166, 0), rgb(54, 255, 47));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
